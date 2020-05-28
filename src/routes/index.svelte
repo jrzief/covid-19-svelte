@@ -1,46 +1,33 @@
+<script>
+  import CovidState from "../components/CovidState.svelte";
+  import CovidChart from "../components/CovidChart.svelte";
+  import TableContainer from "../components/TableContainer.svelte";
+</script>
+
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+  h1,
+  figure,
+  p {
+    text-align: center;
+    margin: 0 auto;
+  }
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+  h1 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+  }
 </style>
 
-<svelte:head>
-	<title>Sapper project template</title>
-</svelte:head>
+<CovidState />
 
-<h1>Great success!</h1>
+<CovidChart />
 
-<figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+<TableContainer />
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p>
+  <strong>
+    Try editing this file (src/routes/index.svelte) to test live reloading.
+  </strong>
+</p>
